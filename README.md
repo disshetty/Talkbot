@@ -1,4 +1,8 @@
 # Talkbot
+
+
+#Import the function 
+
 import speech_recognition as sr
 from chatterbot import ChatBot
 import pyttsx3
@@ -20,6 +24,8 @@ while(True):
         print(guess)
 
     message = guess
+#End the program if no further reply
+
     if((message == 'bye') or (message == 'Bye')):
         reply = 'Nice to talk to you.'
         print('{} : {}'.format(bot.name, reply))
